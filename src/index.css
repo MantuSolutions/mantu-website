@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+/* Em vez de usar @apply aqui, vamos definir o básico 
+   que o Tailwind v4 espera para resetar o navegador */
+:root {
+  color-scheme: dark;
+}
+
+body {
+  margin: 0;
+  background-color: black;
+  color: white;
+  -webkit-font-smoothing: antialiased;
+}
+
+html {
+  scroll-behavior: smooth;
+  /* Melhora a renderização de fontes e transições durante o scroll */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Esconde a barra de scroll feia, mantendo a funcionalidade */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #222;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #f97316; /* Laranja GearMind no hover */
+}
