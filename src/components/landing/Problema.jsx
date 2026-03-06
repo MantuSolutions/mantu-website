@@ -4,12 +4,11 @@ export default function Problema() {
       
       {/* Detalhe visual de fundo (Grid sutil) */}
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:40px_40px] pointer-events-none"></div>
-     <div className="h-15"></div>
       <div className="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
         
         {/* Cabeçalho da Seção */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-5xl md:text-6xl font-black text-white uppercase tracking-tight mb-6">
+          <h2 className="text-5xl md:text-6xl font-black text-white uppercase tracking-tight mb-6 py-25">
             O manual da sua moto <br className="hidden md:block" />
             <span className="text-orange-500 italic">NÃO TE CONHECE</span>
           </h2>
@@ -46,7 +45,7 @@ export default function Problema() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
               </svg>
             </div>
-            <h3 className="text-2xl font-bold text-white mb-4 uppercase tracking-wide">
+            <h3 className="text-2xl font-bold text-white uppercase tracking-wide">
               Arrisca seu Motor
             </h3>
             <p className="text-gray-400 leading-relaxed">

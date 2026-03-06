@@ -29,7 +29,7 @@ const solutions = [
 
 export default function SolutionSection() {
   return (
-    <section className="bg-black py-24 px-6 relative overflow-hidden">
+    <section className="bg-black py-25 px-6 relative overflow-hidden">
       {/* Grid de fundo sutil para manter o padrão do Hero */}
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808008_1px,transparent_1px),linear-gradient(to_bottom,#80808008_1px,transparent_1px)] bg-[size:40px_40px]"></div>
 
@@ -55,7 +55,7 @@ export default function SolutionSection() {
               key={index} 
               className="group p-8 rounded-2xl border border-white/5 bg-white/[0.02] hover:bg-white/[0.05] hover:border-orange-500/30 transition-all duration-300 backdrop-blur-sm"
             >
-              <div className="mb-6 inline-block p-3 rounded-lg bg-orange-500/10 group-hover:scale-110 transition-transform">
+              <div className=" inline-block p-3 rounded-lg bg-orange-500/10 group-hover:scale-110 transition-transform">
                 {item.icon}
               </div>
               <div className="text-[10px] font-bold text-orange-400 tracking-tighter uppercase mb-2">
@@ -70,7 +70,6 @@ export default function SolutionSection() {
             </div>
           ))}
         </div>
-          <div className='h-8'></div>
       </div>
     </section>
   );
