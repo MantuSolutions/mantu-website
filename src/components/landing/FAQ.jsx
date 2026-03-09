@@ -7,27 +7,32 @@ export default function FAQ() {
     {
       id: "faq-1",
       pergunta: "O GearMind usa os mesmos prazos do manual?",
-      resposta: "Não. O manual da montadora serve apenas como nossa 'Verdade Base'. Nossa IA utiliza o motor XGBoost treinado com milhares de registros para calcular o desgaste real baseado no seu perfil de uso diário, ignorando prazos engessados."
+      resposta: "Não. O manual da montadora serve apenas como nosso teto de recomendação. Nossa IA utiliza o motor XGBoost e nunca irá recomendar um tempo maior que o informado no manual"
     },
     {
       id: "faq-2",
       pergunta: "O que acontece se eu atrasar uma troca?",
-      resposta: "O sistema ativa a Memória de Negligência. Se você atrasou a troca de óleo ou filtro anterior, a IA calcula o desgaste extra que o motor sofreu e encurta automaticamente o prazo da próxima manutenção para compensar e proteger a máquina."
+      resposta: "O sistema ativa o regístro de atraso. Se você demorou pra trocar óleo ou filtro, a IA calcula o desgaste extra que o motor sofreu e encurta automaticamente o prazo da próxima manutenção para compensar e proteger a máquina."
     },
     {
       id: "faq-3",
       pergunta: "Como a IA sabe a hora exata de me avisar?",
-      resposta: "Nós não deixamos você chegar no limite. A IA calcula a quilometragem exata da degradação e aplica um Buffer de Segurança de 400 KM. O alerta chega antes do risco, dando tempo de sobra para agendar a oficina."
+      resposta: "Nós não deixamos você chegar no limite. A IA calcula a quilometragem exata da degradação e aplica um aumento de Segurança de 400 KM. O alerta chega antes do risco, dando tempo de sobra para agendar a oficina."
     },
     {
       id: "faq-4",
       pergunta: "E se a moto ficar muito tempo parada?",
-      resposta: "Fluidos sofrem oxidação mesmo sem rodar. O sistema possui uma Trava Temporal: independentemente da quilometragem calculada pela IA, se passarem 180 dias (6 meses) desde a última troca, emitimos um alerta de manutenção por tempo."
+      resposta: "Fluidos sofrem oxidação mesmo sem rodar. O sistema possui uma trava temporal. Independentemente da quilometragem calculada pela IA, se passarem 180 dias (6 meses) desde a última troca, emitimos um alerta de manutenção por tempo."
     },
     {
       id: "faq-5",
       pergunta: "Como o hodômetro se mantém atualizado?",
       resposta: "Sempre que você acessa a plataforma, insere o KM atual do painel. O banco de dados sincroniza instantaneamente, cruzando com seu histórico para recalcular sua média diária de rodagem na mesma hora."
+    },
+    {
+      id: "faq-7",
+      pergunta: "Meus dados de rodagem estão seguros?",
+      resposta: "Totalmente. O GearMind utiliza criptografia de ponta a ponta em todas as comunicações com o banco de dados PostgreSQL. Suas informações de telemetria são usadas exclusivamente pelo motor de IA para gerar suas previsões, sem compartilhamento com terceiros."
     }
   ];
 

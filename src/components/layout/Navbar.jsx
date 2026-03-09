@@ -29,13 +29,6 @@ export default function Navbar() {
               </a>
             </div>
           </div>
-
-          {/* Botão de Ação (Estilo Ignição/Painel) */}
-          <div className="hidden md:block">
-            <button className="bg-white/5 hover:bg-orange-500/10 text-white hover:text-orange-500 border border-white/10 hover:border-orange-500/50 px-6 py-2.5 rounded-full font-bold text-sm uppercase tracking-wider transition-all duration-300 shadow-[0_0_15px_rgba(0,0,0,0.5)]">
-              Acessar Painel
-            </button>
-          </div>
           
           {/* Menu Mobile (Ícone de Hambúrguer) */}
           <div className="md:hidden flex items-center">
