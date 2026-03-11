@@ -31,7 +31,7 @@ export default function Hero() {
   };
 
   return (
-    <section className="relative flex flex-col items-center justify-center min-h-screen px-4 md:px-6 pt-24 md:pt-20 text-center overflow-hidden bg-black">
+    <section className="relative flex flex-col items-center justify-center min-h-screen text-center overflow-hidden bg-black">
       
       {/* Imagem de Fundo (public/fundo.jpg) */}
       <div className="absolute inset-0 z-0">
@@ -48,6 +48,7 @@ export default function Hero() {
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-orange-500/20 blur-[150px] rounded-full z-10 pointer-events-none"></div>
 
       {/* Conteúdo (Badge, Título, etc.) */}
+      <div className="relative z-20 px-4 md:px-6 pt-24 md:pt-20 flex flex-col items-center justify-center h-full">
       <div className="inline-flex items-center gap-2 md:gap-3 px-3 md:px-4 py-1.5 md:py-2 rounded-full border border-orange-500/30 bg-orange-500/10 backdrop-blur-md relative z-20 mb-6 md:mb-8">
         <span className="relative flex h-2 md:h-2.5 w-2 md:w-2.5">
           <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-orange-400 opacity-75"></span>
@@ -88,6 +89,7 @@ export default function Hero() {
       <p className="mt-3 md:mt-6 text-[10px] md:text-sm text-gray-500 font-medium relative z-20">
         Seja o primeiro a testar o cérebro do GearMind quando ele ligar.
       </p>
+      </div>
 
     </section>
   )
