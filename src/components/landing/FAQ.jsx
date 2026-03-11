@@ -37,7 +37,7 @@ export default function FAQ() {
   ];
 
   return (
-    <section className="relative w-full mt-60 md:mt-30 bg-black mb-12 md:mb-40 px-4 md:px-0">
+    <section className="relative w-full mt-40 md:mt-30 bg-black mb-20 md:mb-40 px-4 md:px-0">
       
       {/* Brilho Centralizado no Topo */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[600px] bg-orange-500/10 blur-[150px] rounded-full pointer-events-none z-0"></div>
@@ -50,7 +50,7 @@ export default function FAQ() {
         {/* CABEÇALHO CENTRALIZADO */}
         <div className="text-center max-w-3xl mx-auto mb-8 md:mb-20 flex flex-col items-center">
           
-          <h2 className="text-5xl md:text-5xl lg:text-6xl font-black text-white uppercase tracking-tighter mb-3 md:mb-6 leading-tight">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-white uppercase tracking-tighter mb-3 md:mb-6 leading-tight">
             DÚVIDAS <br className="md:hidden" />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-amber-300 italic">
               TÉCNICAS
