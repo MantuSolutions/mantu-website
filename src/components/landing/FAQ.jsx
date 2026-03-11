@@ -37,7 +37,7 @@ export default function FAQ() {
   ];
 
   return (
-    <section className="relative w-full mt-35 bg-black mb-40">
+    <section className="relative w-full mt-60 md:mt-30 bg-black mb-12 md:mb-40 px-4 md:px-0">
       
       {/* Brilho Centralizado no Topo */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[600px] bg-orange-500/10 blur-[150px] rounded-full pointer-events-none z-0"></div>
@@ -45,25 +45,25 @@ export default function FAQ() {
       {/* Grid de fundo sutil */}
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:40px_40px] pointer-events-none"></div>
 
-      <div className="max-w-6xl mx-auto px-6 lg:px-8 relative z-10">
+      <div className="max-w-6xl mx-auto px-6 md:px-8 lg:px-8 relative z-10">
         
         {/* CABEÇALHO CENTRALIZADO */}
-        <div className="text-center max-w-3xl mx-auto mb-20 flex flex-col items-center">
+        <div className="text-center max-w-3xl mx-auto mb-8 md:mb-20 flex flex-col items-center">
           
-          <h2 className="text-5xl md:text-6xl lg:text-6xl font-black text-white uppercase tracking-tighter mb-6 leading-tight">
+          <h2 className="text-5xl md:text-5xl lg:text-6xl font-black text-white uppercase tracking-tighter mb-3 md:mb-6 leading-tight">
             DÚVIDAS <br className="md:hidden" />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-amber-300 italic">
               TÉCNICAS
             </span>
           </h2>
           
-          <p className="text-gray-400 text-lg md:text-xl font-light leading-relaxed">
+          <p className="text-gray-400 text-sm md:text-lg lg:text-xl font-light leading-relaxed">
             Entenda a lógica de engenharia por trás do nosso motor preditivo e como ele atua diretamente na proteção do seu veículo.
           </p>
         </div>
 
         {/* GRID DE MÓDULOS (2 Colunas no Desktop, 1 no Mobile) */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-start">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-6 items-start">
           {faqData.map((item, index) => {
             const isOpen = openIndex === index;
 
@@ -79,10 +79,10 @@ export default function FAQ() {
                 {/* Botão da Pergunta */}
                 <button
                   onClick={() => setOpenIndex(isOpen ? null : index)}
-                  className="w-full text-left p-5 flex justify-between items-start gap-4 focus:outline-none group"
+                  className="w-full text-left p-3 md:p-5 flex justify-between items-start gap-2 md:gap-4 focus:outline-none group"
                 >
                   <span 
-                    className={`text-lg md:text-lg font-bold tracking-wide transition-colors duration-300 ${
+                    className={`text-sm md:text-lg font-bold tracking-wide transition-colors duration-300 ${
                       isOpen ? "text-orange-400" : "text-white group-hover:text-orange-500"
                     }`}
                   >
@@ -91,7 +91,7 @@ export default function FAQ() {
                   
                   {/* Ícone Minimalista (Sinal de + e -) */}
                   <div 
-                    className={`shrink-0 w-8 h-8 rounded-full flex items-center justify-center transition-all duration-500 border ${
+                    className={`shrink-0 w-7 md:w-8 h-7 md:h-8 rounded-full flex items-center justify-center transition-all duration-500 border ${
                       isOpen 
                         ? "bg-orange-500 text-black border-orange-500 rotate-180" 
                         : "bg-transparent text-gray-400 border-white/10 group-hover:border-orange-500/50 group-hover:text-orange-500"
@@ -115,9 +115,9 @@ export default function FAQ() {
                   }`}
                 >
                   <div className="overflow-hidden">
-                    <div className="px-8 pb-8 pt-2">
-                      <div className="w-8 h-px bg-orange-500/30 mb-4"></div>
-                      <p className="text-gray-400 text-base md:text-lg font-light leading-relaxed">
+                    <div className="px-3 md:px-8 pb-4 md:pb-8 pt-2">
+                      <div className="w-8 h-px bg-orange-500/30 mb-3 md:mb-4"></div>
+                      <p className="text-gray-400 text-xs md:text-base lg:text-lg font-light leading-relaxed">
                         {item.resposta}
                       </p>
                     </div>
@@ -129,8 +129,8 @@ export default function FAQ() {
         </div>
         
         {/* Fechamento / CTA Secundário */}
-        <div className="mt-20 text-center">
-          <p className="text-gray-500 text-sm font-light">
+        <div className="mt-12 md:mt-20 text-center">
+          <p className="text-gray-500 text-xs md:text-sm font-light">
             Sua dúvida envolve integração direta com APIs? <br className="sm:hidden"/>
             <a href="#" className="text-orange-500 hover:text-orange-400 underline underline-offset-4 ml-1 transition-colors">
               Acesse a documentação do desenvolvedor.
