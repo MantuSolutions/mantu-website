@@ -34,15 +34,7 @@ export default function Hero() {
     <section className="relative flex flex-col items-center justify-center min-h-screen text-center overflow-hidden bg-black">
       
       {/* Imagem de Fundo (public/fundo.jpg) */}
-      <div className="absolute inset-0 z-0">
-        <img 
-          src="/fundo.jpg" 
-          alt="Background Mantu" 
-          className="w-full h-full object-cover opacity-40 object-[50%_30%]"
-        />
-        {/* Overlay para dar profundidade e foco no centro */}
-        <div className="absolute inset-0 bg-gradient-to-b from-black via-transparent to-black"></div>
-      </div>
+      {/* Imagem de Fundo Inteligente */}
 
       {/* Brilho Azul Centralizado */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-blue-600/20 blur-[300px] rounded-full z-10 pointer-events-none"></div>
