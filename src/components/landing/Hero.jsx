@@ -35,6 +35,23 @@ export default function Hero() {
       
       {/* Imagem de Fundo (public/fundo.jpg) */}
       {/* Imagem de Fundo Inteligente */}
+      <div className="absolute inset-0 z-0">
+        <picture>
+          {/* Se a tela for menor que 768px (mobile), use a imagem cortada */}
+          <source 
+            media="(max-w-768px)" 
+            srcSet="/fundo-mobile.webp" 
+          />
+          {/* Caso contrário (desktop), use a imagem original */}
+          <img 
+            src="/fundo.jpg" 
+            alt="Background Mantu" 
+            className="w-full h-full object-cover opacity-40 object-center"
+          />
+        </picture>
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-transparent to-black"></div>
+      </div>
 
       {/* Brilho Azul Centralizado */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-blue-600/20 blur-[300px] rounded-full z-10 pointer-events-none"></div>
