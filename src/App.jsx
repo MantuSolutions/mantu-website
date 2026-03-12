@@ -13,7 +13,7 @@ import Footer from "./components/layout/Footer";
 
 function App() {
   return (
-    <main className="relative min-h-screen w-full overflow-x-hidden bg-black text-white selection:bg-orange-500/30 scroll-smooth">
+    <main className="relative min-h-screen w-full overflow-x-hidden bg-black text-white selection:bg-blue-600/30 scroll-smooth">
       
       <Navbar />
     

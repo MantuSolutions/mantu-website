@@ -37,37 +37,37 @@ export default function Hero() {
       <div className="absolute inset-0 z-0">
         <img 
           src="/fundo.jpg" 
-          alt="Background GearMind" 
-          className="w-full h-full object-cover opacity-30 object-[50%_30%]"
+          alt="Background Mantu" 
+          className="w-full h-full object-cover opacity-40 object-[50%_30%]"
         />
         {/* Overlay para dar profundidade e foco no centro */}
         <div className="absolute inset-0 bg-gradient-to-b from-black via-transparent to-black"></div>
       </div>
 
-      {/* Brilho Laranja Centralizado */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-orange-500/20 blur-[150px] rounded-full z-10 pointer-events-none"></div>
+      {/* Brilho Azul Centralizado */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-blue-600/20 blur-[300px] rounded-full z-10 pointer-events-none"></div>
 
       {/* Conteúdo (Badge, Título, etc.) */}
       <div className="relative z-20 px-4 md:px-6 pt-24 md:pt-20 flex flex-col items-center justify-center h-full">
-      <div className="inline-flex items-center gap-2 md:gap-3 px-3 md:px-4 py-1.5 md:py-2 rounded-full border border-orange-500/30 bg-orange-500/10 backdrop-blur-md relative z-20 mb-6 md:mb-8">
+      <div className="inline-flex items-center gap-2 md:gap-3 px-3 md:px-4 py-1.5 md:py-2 rounded-full border border-blue-600/30 bg-blue-600/10 backdrop-blur-md relative z-20 mb-6 md:mb-8">
         <span className="relative flex h-2 md:h-2.5 w-2 md:w-2.5">
-          <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-orange-400 opacity-75"></span>
-          <span className="relative inline-flex rounded-full h-2 md:h-2.5 w-2 md:w-2.5 bg-orange-500"></span>
+          <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
+          <span className="relative inline-flex rounded-full h-2 md:h-2.5 w-2 md:w-2.5 bg-blue-600"></span>
         </span>
-        <span className="text-[9px] sm:text-[10px] md:text-xs font-bold tracking-[0.2em] text-orange-400 uppercase">
+        <span className="text-[9px] sm:text-[10px] md:text-xs font-bold tracking-[0.2em] text-blue-400 uppercase">
           Plataforma Online • IA em Calibração
         </span>
       </div>
       
       <h1 className="text-4xl md:text-5xl lg:text-7xl font-black text-white mb-3 md:mb-6 tracking-tight leading-tight relative z-20">
         CUIDE DA SUA MOTO <br className="hidden md:block" />
-        <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-amber-300 italic">
+        <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-800 to-blue-300 italic">
           DE FORMA INTELIGENTE.
         </span>
       </h1>
       
       <p className="max-w-3xl text-gray-300 text-sm md:text-lg lg:text-xl mb-6 md:mb-12 leading-relaxed font-light relative z-20">
-        O GearMind é o cérebro que sua garagem precisava. <strong className="text-white font-medium">Economize</strong> com trocas no tempo certo, <strong className="text-white font-medium">proteja</strong> o desempenho original e <strong className="text-white font-medium">cuide</strong> de quem te leva a qualquer lugar.
+        O Mantu é o cérebro que sua garagem precisava. Economize com trocas no tempo certo, proteja o desempenho original e cuide de quem te leva a qualquer lugar.
       </p>
       
       <div className="flex flex-col sm:flex-row gap-2 md:gap-4 w-full max-w-lg mx-auto relative z-20">
@@ -77,17 +77,17 @@ export default function Hero() {
           onChange={(e) => setEmailHero(e.target.value)}
           onKeyDown={(e) => e.key === 'Enter' && handleDirecionarLead()}
           placeholder="Seu melhor e-mail..." 
-          className="w-full px-3 md:px-6 py-2.5 md:py-4 bg-white/5 border border-white/10 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-orange-500 transition-all backdrop-blur-sm text-xs md:text-base"
+          className="w-full px-3 md:px-6 py-2.5 md:py-4 bg-white/5 border border-white/10 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-blue-600 transition-all backdrop-blur-sm text-xs md:text-base"
         />
         <button 
           onClick={handleDirecionarLead}
-          className="whitespace-nowrap px-5 md:px-8 py-2.5 md:py-4 bg-orange-500 hover:bg-orange-600 text-black font-black uppercase tracking-wide rounded-xl transition-all hover:scale-105 active:scale-95 shadow-[0_0_20px_rgba(249,115,22,0.3)] text-xs md:text-base">
+          className="whitespace-nowrap px-5 md:px-8 py-2.5 md:py-4 bg-blue-600 hover:bg-blue-700 text-black font-black uppercase tracking-wide rounded-xl transition-all hover:scale-105 active:scale-95 shadow-[0_0_20px_rgba(37,99,235,0.3)] text-xs md:text-base">
           Acesso VIP à IA
         </button>
       </div>
 
       <p className="mt-3 md:mt-6 text-[10px] md:text-sm text-gray-500 font-medium relative z-20">
-        Seja o primeiro a testar o cérebro do GearMind quando ele ligar.
+        Seja o primeiro a testar o cérebro do Mantu quando ele ligar.
       </p>
       </div>
 

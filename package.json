@@ -1,9 +1,9 @@
 {
-  "name": "gearmind-website",
+  "name": "mantu-website",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://GearMindCo.github.io/gearmind-website",
+  "homepage": "https://MantuCo.github.io/mantu-website",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

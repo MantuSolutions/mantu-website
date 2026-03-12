@@ -6,7 +6,7 @@ export default function FAQ() {
   const faqData = [
     {
       id: "faq-1",
-      pergunta: "O GearMind usa os mesmos prazos do manual?",
+      pergunta: "O Mantu usa os mesmos prazos do manual?",
       resposta: "Não. O manual da montadora serve apenas como nosso teto de recomendação. Nossa IA utiliza o motor XGBoost e nunca irá recomendar um tempo maior que o informado no manual"
     },
     {
@@ -32,7 +32,7 @@ export default function FAQ() {
     {
       id: "faq-7",
       pergunta: "Meus dados de rodagem estão seguros?",
-      resposta: "Totalmente. O GearMind utiliza criptografia de ponta a ponta em todas as comunicações com o banco de dados PostgreSQL. Suas informações de telemetria são usadas exclusivamente pelo motor de IA para gerar suas previsões, sem compartilhamento com terceiros."
+      resposta: "Totalmente. O Mantu utiliza criptografia de ponta a ponta em todas as comunicações com o banco de dados PostgreSQL. Suas informações de telemetria são usadas exclusivamente pelo motor de IA para gerar suas previsões, sem compartilhamento com terceiros."
     }
   ];
 
@@ -40,7 +40,7 @@ export default function FAQ() {
     <section className="relative w-full mt-40 md:mt-30 bg-black mb-20 md:mb-40 px-4 md:px-0">
       
       {/* Brilho Centralizado no Topo */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[600px] bg-orange-500/10 blur-[150px] rounded-full pointer-events-none z-0"></div>
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[600px] bg-blue-600/10 blur-[150px] rounded-full pointer-events-none z-0"></div>
       
       {/* Grid de fundo sutil */}
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:40px_40px] pointer-events-none"></div>
@@ -52,7 +52,7 @@ export default function FAQ() {
           
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-white uppercase tracking-tighter mb-3 md:mb-6 leading-tight">
             DÚVIDAS <br className="md:hidden" />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-amber-300 italic">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-300 italic">
               TÉCNICAS
             </span>
           </h2>
@@ -72,7 +72,7 @@ export default function FAQ() {
                 key={item.id} 
                 className={`flex flex-col rounded-3xl border transition-all duration-500 backdrop-blur-sm overflow-hidden ${
                   isOpen 
-                    ? "bg-white/[0.04] border-orange-500/30 shadow-[0_0_30px_rgba(249,115,22,0.05)]" 
+                    ? "bg-white/[0.04] border-blue-600/30 shadow-[0_0_30px_rgba(37,99,235,0.05)]" 
                     : "bg-white/[0.01] border-white/5 hover:bg-white/[0.02] hover:border-white/10"
                 }`}
               >
@@ -83,7 +83,7 @@ export default function FAQ() {
                 >
                   <span 
                     className={`text-sm md:text-lg font-bold tracking-wide transition-colors duration-300 ${
-                      isOpen ? "text-orange-400" : "text-white group-hover:text-orange-500"
+                      isOpen ? "text-blue-400" : "text-white group-hover:text-blue-600"
                     }`}
                   >
                     {item.pergunta}
@@ -93,8 +93,8 @@ export default function FAQ() {
                   <div 
                     className={`shrink-0 w-7 md:w-8 h-7 md:h-8 rounded-full flex items-center justify-center transition-all duration-500 border ${
                       isOpen 
-                        ? "bg-orange-500 text-black border-orange-500 rotate-180" 
-                        : "bg-transparent text-gray-400 border-white/10 group-hover:border-orange-500/50 group-hover:text-orange-500"
+                        ? "bg-blue-600 text-black border-blue-600 rotate-180" 
+                        : "bg-transparent text-gray-400 border-white/10 group-hover:border-blue-600/50 group-hover:text-blue-600"
                     }`}
                   >
                     <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -116,7 +116,7 @@ export default function FAQ() {
                 >
                   <div className="overflow-hidden">
                     <div className="px-3 md:px-8 pb-4 md:pb-8 pt-2">
-                      <div className="w-8 h-px bg-orange-500/30 mb-3 md:mb-4"></div>
+                      <div className="w-8 h-px bg-blue-600/30 mb-3 md:mb-4"></div>
                       <p className="text-gray-400 text-xs md:text-base lg:text-lg font-light leading-relaxed">
                         {item.resposta}
                       </p>
@@ -132,7 +132,7 @@ export default function FAQ() {
         <div className="mt-12 md:mt-20 text-center">
           <p className="text-gray-500 text-xs md:text-sm font-light">
             Sua dúvida envolve integração direta com APIs? <br className="sm:hidden"/>
-            <a href="#" className="text-orange-500 hover:text-orange-400 underline underline-offset-4 ml-1 transition-colors">
+            <a href="#" className="text-blue-600 hover:text-blue-400 underline underline-offset-4 ml-1 transition-colors">
               Acesse a documentação do desenvolvedor.
             </a>
           </p>

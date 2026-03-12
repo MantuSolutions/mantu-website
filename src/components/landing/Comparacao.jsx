@@ -3,27 +3,27 @@ export default function Comparacao() {
     {
       criterio: "Base de Conhecimento",
       tradicional: "Manual genérico de laboratório",
-      gearmind: "Motor XGBoost treinado com 45.000 registros"
+      mantu: "Motor XGBoost treinado com 45.000 registros"
     },
     {
       criterio: "Abordagem de Troca",
       tradicional: "Reativa (avisa só no limite exato)",
-      gearmind: "Preditiva (alerta seguro 400 KM antes)"
+      mantu: "Preditiva (alerta seguro 400 KM antes)"
     },
     {
       criterio: "Memória de Desgaste",
       tradicional: "Ignora completamente o seu histórico",
-      gearmind: "Pune negligências passadas para salvar o motor"
+      mantu: "Pune negligências passadas para salvar o motor"
     },
     {
       criterio: "Ação do Tempo",
       tradicional: "Foca apenas em quilometragem rodada",
-      gearmind: "Trava de oxidação de fluídos (ex: 180 dias)"
+      mantu: "Trava de oxidação de fluídos (ex: 180 dias)"
     },
     {
       criterio: "Personalização",
       tradicional: "Trata todas as motos de forma igual",
-      gearmind: "Adapta ao seu asfalto e média diária de KM"
+      mantu: "Adapta ao seu asfalto e média diária de KM"
     }
   ];
 
@@ -36,14 +36,14 @@ export default function Comparacao() {
       <div className="max-w-7xl mx-auto px-6 md:px-8 lg:px-8 relative z-10">
         
           <div className="text-center max-w-3xl mx-auto mb-6 md:mb-10">
-            <span className="text-orange-500 font-bold tracking-[0.2em] text-xs md:text-sm uppercase mb-2 md:mb-4 block">
+            <span className="text-blue-600 font-bold tracking-[0.2em] text-xs md:text-sm uppercase mb-2 md:mb-4 block">
               Análise de Eficiência
             </span>
             <h2 className="text-3xl md:text-5xl font-black text-white uppercase tracking-tight mb-4 md:mb-6">
-              A EVOLUÇÃO DA <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-amber-300 italic">MANUTENÇÃO</span>
+              A EVOLUÇÃO DA <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-300 italic">MANUTENÇÃO</span>
             </h2>
             <p className="text-gray-400 text-sm md:text-xl font-light leading-relaxed">
-              O adesivo colado no seu painel é cego para o seu comportamento. O GearMind calcula o desgaste real da sua máquina.
+              O adesivo colado no seu painel é cego para o seu comportamento. O Mantu calcula o desgaste real da sua máquina.
             </p>
           </div>
 
@@ -86,18 +86,18 @@ export default function Comparacao() {
                 </div>
             </div>
 
-            {/* LADO DIREITO: GearMind (Laranja Premium) */}
-            <div className="bg-gradient-to-b from-orange-500/10 to-transparent p-5 md:p-10 lg:p-14 lg:pl-20 relative overflow-hidden">
+            {/* LADO DIREITO: Mantu (Laranja Premium) */}
+            <div className="bg-gradient-to-b from-blue-600/10 to-transparent p-5 md:p-10 lg:p-14 lg:pl-20 relative overflow-hidden">
               {/* Brilho interno */}
-              <div className="absolute top-0 right-0 w-64 h-64 bg-orange-500/10 blur-[80px] rounded-full pointer-events-none"></div>
+              <div className="absolute top-0 right-0 w-64 h-64 bg-blue-600/10 blur-[80px] rounded-full pointer-events-none"></div>
 
                 <div className="mb-6 md:mb-10 text-center lg:text-left relative z-10">
                   <h3 className="text-lg md:text-2xl font-black text-white mb-2 uppercase tracking-wide flex items-center justify-center lg:justify-start gap-2 md:gap-3">
-                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-amber-300">
-                      GearMind IA
+                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-300">
+                      Mantu IA
                     </span>
                   </h3>
-                  <p className="text-orange-500/70 text-xs md:text-sm font-light">
+                  <p className="text-blue-600/70 text-xs md:text-sm font-light">
                     A inteligência preditiva agindo no seu motor.
                   </p>
                 </div>
@@ -105,15 +105,15 @@ export default function Comparacao() {
                 <div className="space-y-5 md:space-y-8 relative z-10">
                   {comparativos.map((item, index) => (
                     <div key={index} className="flex flex-col gap-2">
-                      <span className="text-[8px] md:text-[10px] font-bold text-orange-500/50 uppercase tracking-widest hidden lg:block">
+                      <span className="text-[8px] md:text-[10px] font-bold text-blue-600/50 uppercase tracking-widest hidden lg:block">
                         &nbsp; {/* Espaçador para manter o alinhamento no desktop */}
                       </span>
                       <div className="flex items-start gap-2 md:gap-3">
-                        <svg className="w-4 md:w-5 h-4 md:h-5 text-orange-500 mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <svg className="w-4 md:w-5 h-4 md:h-5 text-blue-600 mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
                         </svg>
                         <span className="text-white font-medium text-xs md:text-sm lg:text-base leading-relaxed drop-shadow-md">
-                          {item.gearmind}
+                          {item.mantu}
                         </span>
                       </div>
                     </div>

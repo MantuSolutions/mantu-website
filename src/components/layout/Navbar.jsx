@@ -18,14 +18,16 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 md:h-20">
           
-          {/* Logo */}
+          {/* Logo em Imagem */}
           <div 
             className="flex-shrink-0 cursor-pointer hover:scale-105 transition-transform z-[70]" 
             onClick={() => { window.scrollTo({top: 0, behavior: 'smooth'}); closeMenu(); }}
           >
-            <span className="text-xl md:text-2xl font-black text-white tracking-tighter italic">
-              GEAR<span className="text-orange-500">MIND</span>
-            </span>
+            <img 
+              src="/logo_mantu.png" 
+              alt="Logo Mantu" 
+              className="h-8 md:h-20 w-auto object-contain"
+            />
           </div>
 
           {/* Menu Desktop */}
@@ -35,7 +37,7 @@ export default function Navbar() {
                 <a 
                   key={link.name}
                   href={link.href} 
-                  className="text-gray-400 hover:text-orange-500 px-3 py-2 text-sm font-bold uppercase tracking-widest transition-all"
+                  className="text-gray-400 hover:text-blue-600 px-3 py-2 text-sm font-bold uppercase tracking-widest transition-all"
                 >
                   {link.name}
                 </a>
@@ -47,7 +49,7 @@ export default function Navbar() {
           <div className="md:hidden flex items-center z-[70]">
             <button 
               onClick={toggleMenu}
-              className={`text-gray-400 hover:text-orange-500 focus:outline-none p-2 transition-all duration-300 ${isOpen ? 'text-orange-500 scale-110' : ''}`}
+              className={`text-gray-400 hover:text-blue-600 focus:outline-none p-2 transition-all duration-300 ${isOpen ? 'text-blue-600 scale-110' : ''}`}
               aria-label="Toggle Menu"
             >
               {isOpen ? (
@@ -74,14 +76,14 @@ export default function Navbar() {
               key={link.name}
               href={link.href} 
               onClick={closeMenu}
-              className="text-2xl md:text-3xl font-black text-white uppercase tracking-widest hover:text-orange-500 transition-colors duration-300"
+              className="text-2xl md:text-3xl font-black text-white uppercase tracking-widest hover:text-blue-600 transition-colors duration-300"
             >
               {link.name}
             </a>
           ))}
           
           {/* Detalhe estético: Uma linha laranja no menu mobile */}
-          <div className="w-12 h-1 bg-gradient-to-r from-orange-500 to-amber-300 mt-8 rounded-full"></div>
+          <div className="w-12 h-1 bg-gradient-to-r from-blue-600 to-blue-300 mt-8 rounded-full"></div>
         </div>
       </div>
     </nav>
