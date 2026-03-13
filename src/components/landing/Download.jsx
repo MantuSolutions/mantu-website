@@ -39,33 +39,34 @@ export default function DownloadCTA() {
     <section className="relative w-full pt-3 md:pt-6 -mt-2 md:-mt-4">
       <div className="flex flex-col lg:flex-row w-full min-h-[60vh] md:min-h-[70vh] mt-0 md:mt-5">
         
+        {/* LADO ESQUERDO (Formulário e Texto) */}
         <div className="w-full lg:w-3/5 px-6 md:px-8 py-16 md:py-20 lg:px-24 xl:px-32 flex flex-col justify-center relative bg-black">
           <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(ellipse_at_top_left,rgba(37,99,235,0.08),transparent_50%)] pointer-events-none"></div>
           
-          <div className="relative z-10">
-            <span className="text-blue-600 font-bold tracking-[0.3em] text-[9px] md:text-xs uppercase mb-4 md:mb-6 flex items-center gap-2 md:gap-3">
+          <div className="relative z-10 flex flex-col w-full">
+            <span className="text-blue-600 font-bold tracking-[0.3em] text-[9px] md:text-xs uppercase mb-4 md:mb-6 flex items-center justify-center lg:justify-start gap-2 md:gap-3 w-full lg:w-auto">
               <span className="w-2 h-2 bg-blue-600 rounded-full animate-pulse"></span>
               Acesso Antecipado
             </span>
             
-            <h2 className="text-3xl md:text-5xl lg:text-7xl font-black text-white uppercase tracking-tighter mb-4 md:mb-8 leading-[1.05]">
+            <h2 className="text-4xl md:text-5xl lg:text-7xl font-black text-white uppercase tracking-tighter mb-4 md:mb-8 leading-[1.05] text-center lg:text-left">
               A IA DO SEU MOTOR <br/>
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-300 italic">
                 NO SEU BOLSO.
               </span>
             </h2>
             
-            <p className="text-gray-400 text-xs md:text-lg lg:text-xl font-light leading-relaxed mb-6 md:mb-10 max-w-xl">
+            <p className="text-gray-400 text-md md:text-lg lg:text-xl font-light leading-relaxed mb-6 md:mb-10 max-w-xl mx-auto lg:mx-0 text-center lg:text-left">
               O aplicativo nativo do Mantu está na fase final de calibração preditiva. 
               Entre para a lista de espera e seja o primeiro a conectar sua máquina.
             </p>
             
             {state.succeeded ? (
-              <div className="p-4 md:p-6 bg-blue-600/10 border border-blue-600/30 text-blue-400 font-bold tracking-widest uppercase max-w-xl animate-in fade-in zoom-in duration-500 text-sm md:text-base">
+              <div className="p-4 md:p-6 bg-blue-600/10 border border-blue-600/30 text-blue-400 font-bold tracking-widest uppercase max-w-xl mx-auto lg:mx-0 text-center lg:text-left animate-in fade-in zoom-in duration-500 text-sm md:text-base">
                 Piloto cadastrado! Verifique sua inbox em breve.
               </div>
             ) : (
-              <div className="relative max-w-xl">
+              <div className="relative max-w-xl mx-auto lg:mx-0 w-full">
                 <form onSubmit={handleCustomSubmit} className="flex flex-col sm:flex-row gap-0 shadow-2xl relative group">
                   <input 
                     id="email" 
@@ -85,7 +86,7 @@ export default function DownloadCTA() {
 
                 {/* Mensagem de Erro com Estilo Brutalista */}
                 {localError && (
-                  <p className="absolute -bottom-8 left-0 text-red-500 text-[10px] font-black uppercase tracking-[0.2em] ">
+                  <p className="absolute -bottom-8 left-0 lg:left-0 w-full text-center lg:text-left text-red-500 text-[10px] font-black uppercase tracking-[0.2em] ">
                     ⚠️ {localError}
                   </p>
                 )}

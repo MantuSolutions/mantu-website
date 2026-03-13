@@ -1,6 +1,6 @@
 export default function Problema() {
   return (
-    <section className="relative pt-20 md:pt-10 pb-5 md:pb-10">
+    <section className="relative pt-20 pb-">
       
       {/* Detalhe visual de fundo (Grid sutil) */}
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:40px_40px] pointer-events-none"></div>

@@ -49,18 +49,18 @@ export default function FAQ() {
         
         {/* CABEÇALHO CENTRALIZADO */}
         <div className="text-center max-w-3xl mx-auto mb-8 md:mb-20 flex flex-col items-center">
-          
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-white uppercase tracking-tighter mb-3 md:mb-6 leading-tight">
-            DÚVIDAS <br className="md:hidden" />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-300 italic">
-              TÉCNICAS
-            </span>
-          </h2>
-          
-          <p className="text-gray-400 text-sm md:text-lg lg:text-xl font-light leading-relaxed">
-            Entenda a lógica de engenharia por trás do nosso motor preditivo e como ele atua diretamente na proteção do seu veículo.
-          </p>
-        </div>
+  
+        <h2 className="text-4xl sm:text-5xl md:text-5xl lg:text-6xl font-black text-white uppercase tracking-tighter mb-3 md:mb-6 leading-tight whitespace-nowrap">
+          DÚVIDAS{" "}
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-300 italic">
+            TÉCNICAS
+          </span>
+        </h2>
+        
+        <p className="text-gray-400 text-md md:text-lg lg:text-xl font-light leading-relaxed w-full max-w-2xl sm:max-w-none">
+          Entenda a lógica de engenharia por trás do nosso motor preditivo e como ele atua diretamente na proteção do seu veículo.
+        </p>
+      </div>
 
         {/* GRID DE MÓDULOS (2 Colunas no Desktop, 1 no Mobile) */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-6 items-start">

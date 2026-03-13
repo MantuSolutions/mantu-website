@@ -28,7 +28,7 @@ export default function Comparacao() {
   ];
 
   return (
-    <section className="relative bg-black border-t border-white/5 overflow-hidden -mt-0 md:-mt-20 pt-6 md:pt-0 pb-6 md:pb-0">
+    <section className="relative w-full bg-black border-t border-white/5 overflow-hidden">
       
       {/* Grid de fundo sutil */}
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:40px_40px] pointer-events-none"></div>
@@ -39,7 +39,7 @@ export default function Comparacao() {
             <span className="text-blue-600 font-bold tracking-[0.2em] text-xs md:text-sm uppercase mb-2 md:mb-4 block">
               Análise de Eficiência
             </span>
-            <h2 className="text-3xl md:text-5xl font-black text-white uppercase tracking-tight mb-4 md:mb-6">
+            <h2 className="text-5xl md:text-5xl font-black text-white uppercase tracking-tight mb-4 md:mb-6">
               A EVOLUÇÃO DA <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-300 italic">MANUTENÇÃO</span>
             </h2>
             <p className="text-gray-400 text-sm md:text-xl font-light leading-relaxed">
@@ -58,7 +58,7 @@ export default function Comparacao() {
             
             {/* LADO ESQUERDO: O Padrão Antigo (Vermelho/Cinza) */}
             <div className="bg-white/[0.01] p-5 md:p-10 lg:p-14 lg:pr-20 lg:border-r border-white/5">
-                <div className="mb-6 md:mb-10 text-center lg:text-left">
+                <div className="mb-6 md:mb-10 text-center lg:text-center">
                   <h3 className="text-lg md:text-2xl font-bold text-gray-300 mb-2 uppercase tracking-wide">
                     O Padrão Antigo
                   </h3>
@@ -69,15 +69,18 @@ export default function Comparacao() {
 
                 <div className="space-y-5 md:space-y-8">
                   {comparativos.map((item, index) => (
-                    <div key={index} className="flex flex-col gap-2">
-                      <span className="text-[8px] md:text-[10px] font-bold text-gray-600 uppercase tracking-widest">
+                 
+                    <div key={index} className="flex flex-col items-center lg:items-start gap-2">
+                     
+                      <span className="text-[10px] md:text-[10px] font-bold text-gray-600 uppercase tracking-widest text-center lg:text-left">
                         {item.criterio}
                       </span>
-                      <div className="flex items-start gap-2 md:gap-3">
+                      
+                      <div className="flex flex-row-reverse justify-center lg:justify-start gap-1">
                         <svg className="w-4 md:w-5 h-4 md:h-5 text-red-500/60 mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
                         </svg>
-                        <span className="text-gray-400 font-light text-xs md:text-sm lg:text-base leading-relaxed">
+                        <span className="text-gray-400 font-light text-md leading-relaxed text-left">
                           {item.tradicional}
                         </span>
                       </div>
@@ -86,13 +89,13 @@ export default function Comparacao() {
                 </div>
             </div>
 
-            {/* LADO DIREITO: Mantu (Laranja Premium) */}
+            {/* LADO DIREITO: Mantu */}
             <div className="bg-gradient-to-b from-blue-600/10 to-transparent p-5 md:p-10 lg:p-14 lg:pl-20 relative overflow-hidden">
               {/* Brilho interno */}
               <div className="absolute top-0 right-0 w-64 h-64 bg-blue-600/10 blur-[80px] rounded-full pointer-events-none"></div>
 
-                <div className="mb-6 md:mb-10 text-center lg:text-left relative z-10">
-                  <h3 className="text-lg md:text-2xl font-black text-white mb-2 uppercase tracking-wide flex items-center justify-center lg:justify-start gap-2 md:gap-3">
+                <div className="mb-6 md:mb-10 text-center lg:text-center relative z-10">
+                  <h3 className="text-lg md:text-2xl font-black text-white mb-2 uppercase tracking-wide flex items-center justify-center lg:justify-center gap-2 md:gap-3">
                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-300">
                       Mantu IA
                     </span>
@@ -104,19 +107,22 @@ export default function Comparacao() {
 
                 <div className="space-y-5 md:space-y-8 relative z-10">
                   {comparativos.map((item, index) => (
-                    <div key={index} className="flex flex-col gap-2">
-                      <span className="text-[8px] md:text-[10px] font-bold text-blue-600/50 uppercase tracking-widest hidden lg:block">
-                        &nbsp; {/* Espaçador para manter o alinhamento no desktop */}
+                    
+                    <div key={index} className="flex flex-col items-center lg:items-start gap-2">
+                      <span className="text-[12px] md:text-[10px] font-bold text-blue-600/50 uppercase tracking-widest hidden lg:block text-center lg:text-left">
+                        &nbsp;
                       </span>
-                      <div className="flex items-start gap-2 md:gap-3">
-                        <svg className="w-4 md:w-5 h-4 md:h-5 text-blue-600 mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
-                        </svg>
-                        <span className="text-white font-medium text-xs md:text-sm lg:text-base leading-relaxed drop-shadow-md">
-                          {item.mantu}
-                        </span>
-                      </div>
+                    
+                    <div className="flex flex-row-reverse items-start justify-center lg:justify-start gap-1">
+                      <svg className="w-4 md:w-5 h-4 md:h-5 text-blue-600 mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
+                      </svg>
+                     
+                      <span className="text-white font-medium text-md leading-relaxed drop-shadow-md text-right lg:text-left">
+                        {item.mantu}
+                      </span>
                     </div>
+                  </div>
                   ))}
                 </div>
             </div>
