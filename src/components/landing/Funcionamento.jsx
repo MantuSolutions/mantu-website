@@ -28,15 +28,8 @@ export default function Funcionamento() {
     }
   ];
 
-  // Faltava exatamente este 'return (' aqui embaixo!
   return (
     <section className="relative w-full bg-black overflow-hidden py-50 md:py-24 lg:pb-24 lg:pt-0 lg:-mt-12">
-      
-      {/* Background Glow */}
-      <div className="absolute left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[450px] bg-blue-600/5 blur-[120px] rounded-full pointer-events-none"></div>
-      
-      {/* Grid de fundo sutil */}
-      <div className="absolute inset-0 bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:40px_40px] pointer-events-none"></div>
 
       <div className="max-w-7xl mx-auto px-6 md:px-8 lg:px-8 relative z-10">
         
@@ -45,8 +38,8 @@ export default function Funcionamento() {
           <span className="text-blue-600 font-bold tracking-[0.2em] text-xs md:text-sm uppercase mb-2 md:mb-4 block">
             Arquitetura do Sistema
           </span>
-          <h2 className="text-5xl md:text-6xl font-black text-white uppercase tracking-tight mb-4 md:mb-6">
-            COMO O <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-300 italic">MANTU</span> PENSA
+          <h2 className="text-5xl md:text-5xl max-[350px]:text-3xl font-black text-white uppercase tracking-tight mb-4 md:mb-6">
+            COMO O <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-300 italic pr-1">MANTU</span> PENSA
           </h2>
           <p className="text-gray-400 text-sm md:text-xl font-light leading-relaxed">
             Não é um alarme no celular. É um pipeline de engenharia de dados que transforma a rotina da sua moto em previsões matemáticas exatas.

@@ -41,16 +41,13 @@ export default function FAQ() {
       
       {/* Brilho Centralizado no Topo */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[600px] bg-blue-600/10 blur-[150px] rounded-full pointer-events-none z-0"></div>
-      
-      {/* Grid de fundo sutil */}
-      <div className="absolute inset-0 bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:40px_40px] pointer-events-none"></div>
 
       <div className="max-w-6xl mx-auto px-6 md:px-8 lg:px-8 relative z-10">
         
         {/* CABEÇALHO CENTRALIZADO */}
         <div className="text-center max-w-3xl mx-auto mb-8 md:mb-20 flex flex-col items-center">
   
-        <h2 className="text-4xl sm:text-5xl md:text-5xl lg:text-6xl font-black text-white uppercase tracking-tighter mb-3 md:mb-6 leading-tight whitespace-nowrap">
+        <h2 className="text-4xl sm:text-5xl md:text-5xl lg:text-6xl max-[350px]:text-3xl font-black text-white uppercase tracking-tighter mb-3 md:mb-6 leading-tight whitespace-nowrap">
           DÚVIDAS{" "}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-300 italic">
             TÉCNICAS

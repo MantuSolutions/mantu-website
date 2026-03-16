@@ -3,12 +3,11 @@ export default function Problema() {
     <section className="relative pt-20 pb-">
       
       {/* Detalhe visual de fundo (Grid sutil) */}
-      <div className="absolute inset-0 bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:40px_40px] pointer-events-none"></div>
       <div className="max-w-7xl mx-auto px-6 md:px-8 lg:px-8 relative z-10">
         
         {/* Cabeçalho da Seção */}
         <div className="text-center max-w-3xl mx-auto mb-8 md:mb-16">
-          <h2 className="text-4xl md:text-6xl font-black text-white uppercase tracking-tight">
+          <h2 className="text-4xl md:text-5xl font-black text-white uppercase tracking-tight">
             O manual da sua moto <br className="hidden md:block" />
             <span className="text-blue-600 italic">NÃO TE CONHECE</span>
           </h2>
