@@ -2,18 +2,18 @@ export default function Comparacao() {
   const comparativos = [
     {
       criterio: "Base de Conhecimento",
-      tradicional: "Manual genérico de laboratório",
+      tradicional: "Intuição quando a moto comeca a falhar",
       mantu: "Motor XGBoost treinado com 45.000 registros"
     },
     {
       criterio: "Abordagem de Troca",
-      tradicional: "Reativa (avisa só no limite exato)",
+      tradicional: "Recomenda troca com km fixa",
       mantu: "Preditiva (alerta seguro 400 KM antes)"
     },
     {
       criterio: "Memória de Desgaste",
-      tradicional: "Ignora completamente o seu histórico",
-      mantu: "Pune negligências passadas para salvar o motor"
+      tradicional: "Não considera atrasos passados",
+      mantu: "Relembra atrasos e recalcula o desgaste "
     },
     {
       criterio: "Ação do Tempo",
@@ -40,7 +40,7 @@ export default function Comparacao() {
               A EVOLUÇÃO DA <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-300 italic">MANUTENÇÃO</span>
             </h2>
             <p className="text-gray-400 text-sm md:text-xl font-light leading-relaxed">
-              O adesivo colado no seu painel é cego para o seu comportamento. O Mantu calcula o desgaste real da sua máquina.
+              O adesivo no seu painel é cego para o seu comportamento. O Mantu calcula o desgaste real da sua máquina.
             </p>
           </div>
 

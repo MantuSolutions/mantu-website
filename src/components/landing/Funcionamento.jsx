@@ -4,20 +4,20 @@ export default function Funcionamento() {
   const pipeline = [
     {
       id: "01",
-      title: "Sincronização de Telemetria",
+      title: "Telemetria",
       description: "Você insere o KM do painel. O sistema cruza esse dado com seu histórico instantaneamente, estabelecendo sua média real de rodagem diária.",
       metric: "Input de Dados"
     },
     {
       id: "02",
-      title: "Processamento XGBoost",
-      description: "O algoritmo avalia seu perfil (urbano ou lazer) contra 45.000 padrões de desgaste, ignorando o manual genérico da montadora.",
+      title: "Processamento",
+      description: "O manual assume que você pilota em um laboratório. Utilizamos inteligência artificial para prever o desgaste dos componentes.",
       metric: "Análise Preditiva"
     },
     {
       id: "03",
       title: "Cálculo de Negligência",
-      description: "O motor busca atrasos em trocas anteriores. Se houve negligência passada, a IA encurta a vida útil da peça atual para proteger o motor.",
+      description: "O motor busca atrasos em trocas anteriores. Se houve um atraso no passado, a IA encurta a vida útil da peça atual para proteger o motor.",
       metric: "Ajuste de Desgaste"
     },
     {

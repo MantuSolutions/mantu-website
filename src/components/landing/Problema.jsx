@@ -9,12 +9,12 @@ export default function Problema() {
         {/* Cabeçalho da Seção */}
         <div className="text-center max-w-3xl mx-auto mb-8 md:mb-16">
           <h2 className="text-4xl md:text-5xl font-black text-white uppercase tracking-tight">
-            O manual da sua moto <br className="hidden md:block" />
-            <span className="text-blue-600 italic">NÃO TE CONHECE</span>
+            O barulho da sua moto <br className="hidden md:block" />
+            <span className="text-blue-600 italic">SEMPRE SAI CARO</span>
           </h2>
           <p className="text-sm md:text-lg text-white-400 font-light leading-relaxed pt-5 md:pt-10">
-            Os manuais são escritos para condições perfeitas de laboratório, não pro asfalto 
-            e uso diário nos brasileiros. Sua moto exige uma inteligência que entenda o asfalto que você anda todo dia.
+            Esperar ouvir um estalo diferente para ir à oficina é arriscar a sua segurança. 
+            Quando o barulho aparece, a peça já comprometeu o conjunto. O Mantu antecipa o que o seu ouvido não consegue escutar.
           </p>
         </div>
 
@@ -49,7 +49,8 @@ export default function Problema() {
               Arrisca seu Motor
             </h3>
             <p className="text-gray-400 text-sm md:text-base leading-relaxed mt-2 md:mt-3">
-              Por outro lado, esticar o prazo e esquecer a quilometragem é o caminho mais rápido para ficar na mão. Uma peça que quebra no momento errado custa dez vezes mais.
+              Por outro lado, esticar o prazo e esquecer a manutenção é o caminho mais rápido para ficar na mão. 
+              Uma peça que quebra no momento errado custa dez vezes mais.
             </p>
           </div>
 

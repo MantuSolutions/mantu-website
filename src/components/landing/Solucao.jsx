@@ -2,14 +2,14 @@ import { BrainCircuit, ShieldAlert, History, Timer } from 'lucide-react';
 
 const solutions = [
   {
-    title: "O Cérebro XGBoost",
-    description: "Esqueça o manual genérico. Nossa IA analisa seu perfil de uso — seja urbano severo ou estrada — e calcula a degradação real de cada componente.",
+    title: "Engenharia Preditiva",
+    description: "Esqueça o ouvidômetro. Nossa IA analisa seu perfil real de uso, calculamos a degradação de cada componente pra você nunca ser pego de surpresa.",
     icon: <BrainCircuit className="w-8 h-8 text-blue-600" />,
-    tag: "Motor Preditivo"
+    tag: "Inteligência de Uso"
   },
   {
-    title: "Memória de Negligência",
-    description: "O sistema identifica atrasos em trocas passadas e recalcula o desgaste acumulado, encurtando prazos críticos para salvar seu motor.",
+    title: "Memória de Desgaste",
+    description: "O sistema Mantu identifica atrasos em trocas passadas e recalcula o desgaste acumulado, encurtando prazos críticos para salvar seu motor.",
     icon: <History className="w-8 h-8 text-blue-600" />,
     tag: "Análise de Histórico"
   },
@@ -21,7 +21,7 @@ const solutions = [
   },
   {
     title: "Trava de Oxidação",
-    description: "Fluídos envelhecem mesmo sem rodar. Nossa trava de 180 dias garante que o óleo seja trocado por tempo, evitando corrosão interna.",
+    description: "Fluídos envelhecem mesmo sem rodar. Nossa trava de 180 dias garante que o óleo seja trocado também por tempo, evitando danos internos.",
     icon: <Timer className="w-8 h-8 text-blue-600" />,
     tag: "Monitoramento Temporal"
   }
@@ -40,9 +40,9 @@ export default function SolutionSection() {
             Engenharia de Dados Aplicada
           </h2>
           <h3 className="text-4xl md:text-5xl lg:text-5xl max-[350px]:text-3xl font-black text-white mb-4 md:mb-6 tracking-tight">
-            A CIÊNCIA POR TRÁS DA <br />
+            A CIÊNCIA DO MANUAL <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-300">
-              SUA SEGURANÇA.
+              COM A INTELIGÊNCIA DOS DADOS
             </span>
           </h3>
           <p className="text-gray-400 max-w-2xl mx-auto text-sm md:text-lg font-light leading-relaxed">
